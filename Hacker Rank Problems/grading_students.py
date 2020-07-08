@@ -14,7 +14,7 @@ import sys
 #
 
 def gradingStudents(grades):
-    for i in range (0,len(grades)):
+    for i, item in enumerate(grades):
         if grades[i] >= 38 and grades[i]%5 != 0:
             j = grades[i]
             while(j%5!=0):
