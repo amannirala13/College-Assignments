@@ -10,6 +10,7 @@ This repository contains my academic assignments (projects and scripts) from my 
 <a href="https://github.com/amannirala13/College-Assignments/watchers"><img alt="watcher-badge" src="https://img.shields.io/github/watchers/amannirala13/College-Assignments?color=teal"></a>
 <a href="https://github.com/amannirala13/College-Assignments/archive/master.zip"><img alt = "repo_size-badge" src="https://img.shields.io/github/repo-size/amannirala13/College-Assignments"></a>
 </p>
+
 ------
 
 ### Languages Used
