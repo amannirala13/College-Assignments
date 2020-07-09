@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 import java.lang.Math;
 
-class Result {
+class diagonal_difference {
 
     /*
      * Complete the 'diagonalDifference' function below.

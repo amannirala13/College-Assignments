@@ -11,7 +11,8 @@ public class min_max_sum {
     // Complete the miniMaxSum function below.
     static void miniMaxSum(int[] arr) {
 
-        int minPos = 0, maxPos = 0; long minSum=0, maxSum=0, sameSum = 0;
+        int minPos = 0, maxPos = 0; 
+        long minSum=0, maxSum=0, sameSum = 0;
         boolean same = true;
         int picked = arr[0];
         for(int i =0; i<arr.length;i++)
