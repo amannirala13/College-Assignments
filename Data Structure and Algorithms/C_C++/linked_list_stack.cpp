@@ -37,10 +37,14 @@ void push(info arg){
 
 // Pop function for deleting elements
 void pop(){
-   block* temp = top->prev;
-   delete top;
-   top = temp;
-   cout<<"Popped an element! "<<endl;
+   if(isEmpty())
+      cout<<"Stack underflow!"<<endl;
+   else{
+      block* temp = top->prev;
+      delete top;
+      top = temp;
+      cout<<"Popped an element! "<<endl;
+   }
 }
 
 // Traverse for readign and printing elements of the linked-list
