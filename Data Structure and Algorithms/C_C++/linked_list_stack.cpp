@@ -1,3 +1,10 @@
+/*
+Author: Aman Kumar Nirala
+Github: https://www.github.com/amannirala13
+Website: https://www.amannirala.com
+
+*/
+
 #include <iostream>
 #include <string>
 
