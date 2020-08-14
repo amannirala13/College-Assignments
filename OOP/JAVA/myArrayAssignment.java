@@ -1,11 +1,28 @@
 import java.util.*;
 
-public class myArrayAssignment {
+public class myArrayAssignment{
 
     public static class myArray extends ArrayList<Integer> {
 
+        private final ArrayList<Integer> originalData;
+
+        public myArray(){
+            originalData = new ArrayList<>();
+        }
+
+        public ArrayList<Integer> getData(){
+            return originalData;
+        }
+
         public void sort(){
             this.sort(Comparator.naturalOrder());
+        }
+
+        public Object[] findItem(int item){
+            if(this.contains(item))
+                return new Object[]{true, this.getData().indexOf(item)};
+            else
+                return new Object[]{false};
         }
 
         public Integer getMax() {
@@ -27,6 +44,13 @@ public class myArrayAssignment {
 
         public void sortDescending() {
             this.sort(Comparator.reverseOrder());
+        }
+
+        @Override
+        public boolean add(Integer integer) {
+            super.add(integer);
+            originalData.add(integer);
+            return true;
         }
     }
 
@@ -51,7 +75,7 @@ public class myArrayAssignment {
                 }
             }
         }
-        
+
         System.out.println("Max value = "+ myList.getMax());
         System.out.println("Min value = "+ myList.getMin());
         System.out.println("Average value = "+ myList.getAverage());
@@ -59,29 +83,12 @@ public class myArrayAssignment {
         System.out.println("Sorted Array (Ascending order) = "+ myList);
         myList.sortDescending();
         System.out.println("Sorted Array (Descending order) = "+ myList);
+        System.out.print("Enter the element to search for: ");
+        int item = sc.nextInt();
+        Object[] result = myList.findItem(item);
+        if((boolean)result[0])
+            System.out.println("Found "+ item + " at "+ result[1]);
+        else
+            System.out.println("Didn't find "+ item + " in the list");
     }
 }
-
-/*
-
-OUTPUT:
-
-To exit input, type "exit"!
-1
-0
-2
-9
-3
-8
-4
-7
-5
-6
-exit
-Max value = 9
-Min value = 0
-Average value = 4.5
-Sorted Array (Ascending order) = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-Sorted Array (Descending order) = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-
-*/
