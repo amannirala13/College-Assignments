@@ -1,3 +1,5 @@
+package com.asdev.classes;
+
 public class shopping{
 	
 	public static class customer{
@@ -123,4 +125,4 @@ Net Amount = 270.0
 
 
 
-/*
+*/
