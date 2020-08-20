@@ -1,6 +1,7 @@
 package com.asdev.array;
 // Author: amannirala13
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Student_Array {
     public static class Student{
@@ -60,6 +61,7 @@ public class Student_Array {
         }
 
         public void printResult(){
+            System.out.println("-----------------[ RESULT ]-----------------");
             System.out.println("Name: "+ this.name);
             System.out.println("PRN: "+ this.PRN);
             System.out.println("Course: "+ this.course);
@@ -73,10 +75,29 @@ public class Student_Array {
     }
 
     public static void main(String[] args) {
+
         ArrayList<Double> marks = new ArrayList<>();
-        marks.add(50.0);
-        marks.add(50.0);
-        Student s1 = new Student(10, "Aman Nirala", "BCA", marks);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Student Name: ");
+        String name = sc.nextLine();
+        System.out.print("Student PRN: ");
+        long PRN = sc.nextLong();
+        System.out.print("Student Course: ");
+        String course = sc.next();
+        System.out.println("Marks input (Enter \"exit\" to stop):--------------------- ");
+        String input;
+        while (true){
+            System.out.print("Enter subject mark: ");
+            input = sc.next();
+            if(input.equalsIgnoreCase("exit")){
+                break;
+            }
+            else
+                marks.add(Double.parseDouble(input));
+        }
+
+        Student s1 = new Student(PRN, name, course, marks);
         s1.printResult();
     }
 }
@@ -85,13 +106,24 @@ public class Student_Array {
 
 ------------ OUTPUT ------------------
 
+Student Name: Aman Nirala
+Student PRN: 19030121010
+Student Course: CS
+Marks input (Enter "exit" to stop):---------------------
+Enter subject mark: 100
+Enter subject mark: 90
+Enter subject mark: 50
+Enter subject mark: 100
+Enter subject mark: 50
+Enter subject mark: exit
+-----------------[ RESULT ]-----------------
 Name: Aman Nirala
-PRN: 10
-Course: BCA
-Subject Marks: [50.0, 50.0]
-Total Marks: 100.0 out of 200
-Percentage: 50.0
-Result Grade: E
+PRN: 19030121010
+Course: CS
+Subject Marks: [100.0, 90.0, 50.0, 100.0, 50.0]
+Total Marks: 390.0 out of 500
+Percentage: 78.0
+Result Grade: B
 
 --------------------------------------
 Process finished with exit code 0
