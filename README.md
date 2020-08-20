@@ -19,6 +19,7 @@ This repository contains my academic assignments (projects and scripts) from my 
 - Python
 - Java
 - Shell
+- Matlab
 
 ------
 
