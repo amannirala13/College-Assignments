@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android SIU</string>
+    <string name="enter_text_to_send_to_other_activity">Enter text to send to the other activity</string>
+    <string name="activity_1">Activity 1</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send">Send</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="here_is_your_message">Here is your message!</string>
+    <string name="close">Close</string>
+</resources>
