@@ -20,6 +20,7 @@ This repository contains my academic assignments (projects and scripts) from my 
 - Java
 - Shell
 - Matlab
+- Kotlin
 
 ------
 
