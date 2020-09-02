@@ -13,7 +13,7 @@ src
 │           └───mobilesiu
 │               ├───assignments			==> Contains the files and pkg of assignments  
 │               │   └───asg1			==> Package of 1st assignment
-│			   │
+│			          │
 │               └───main  -> (Contains the files for listing the assignments)
 │                   ├───activities
 │                   ├───adapter
