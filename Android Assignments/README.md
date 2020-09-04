@@ -1,6 +1,6 @@
 # Android Assignments
 
-This repository contains the source code on the Android Application that I will be maintaining for all android related micro-assignments that will be assigned to me during my graduation.
+This repository contains the source code of the Android Application that I will be maintaining for all android related micro-assignments that will be assigned to me during my graduation.
 
 ## Let's discuss the project structure:
 
