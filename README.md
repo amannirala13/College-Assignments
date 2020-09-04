@@ -26,5 +26,5 @@ This repository contains my academic assignments (projects and scripts) from my 
 
 ### Important Resource Links
 
-[C++ Liberary Reference](http://www.cplusplus.com/reference/)
+[C++ Library Reference](http://www.cplusplus.com/reference/)
 
