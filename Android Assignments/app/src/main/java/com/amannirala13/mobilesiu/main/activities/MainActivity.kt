@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.amannirala13.mobilesiu.R
 import com.amannirala13.mobilesiu.assignments.asg1.Asg1First
+import com.amannirala13.mobilesiu.assignments.asg2.activities.Asg2MainActivity
 import com.amannirala13.mobilesiu.main.adapter.MainRecyclerAdapters
 import com.amannirala13.mobilesiu.main.model.Assignment
 import com.amannirala13.mobilesiu.main.model.AssignmentRunnable
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         assignmentList.add(Assignment(1, "Assignment 1", "This assignment is about passing a text from one activity another via intent!", "Aman Kumar Nirala",
             object: AssignmentRunnable{ override fun execute() { startActivity(Intent(this@MainActivity, Asg1First::class.java)) } }))
+
+        assignmentList.add(Assignment(2, "Live Data (Assignment 2)", "This assignment is about using live data with view models and tools like recycler views", "Aman Kumar Nirala",
+            object: AssignmentRunnable{ override fun execute() { startActivity(Intent(this@MainActivity, Asg2MainActivity::class.java)) } }))
 
         if(assignmentList.isNotEmpty())
             addAdapter()

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".assignments.asg1.Asg1Second"></activity>
+        <activity android:name=".assignments.asg2.activities.RestaurantEntryForm"
+            android:theme="@style/Asg2Theme"/>
+        <activity
+            android:name=".assignments.asg2.activities.Asg2MainActivity"
+            android:theme="@style/Asg2Theme" />
+        <activity android:name=".assignments.asg1.Asg1Second" />
         <activity android:name=".assignments.asg1.Asg1First" />
         <activity android:name=".main.activities.MainActivity">
             <intent-filter>

@@ -7,4 +7,9 @@
     <string name="activity_2">Activity 2</string>
     <string name="here_is_your_message">Here is your message!</string>
     <string name="close">Close</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="special_item">Special item</string>
+    <string name="rate">Rate</string>
 </resources>

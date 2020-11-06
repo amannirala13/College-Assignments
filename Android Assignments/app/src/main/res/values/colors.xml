@@ -8,4 +8,9 @@
     <color name="colorRed">#FF0000</color>
     <color name="colorSemiWhite">#FBFBFB</color>
     <color name="colorTransparent">#00000000</color>
+
+
+    <color name="asg2Primary">#ffecb3</color>
+    <color name="asg2PrimaryDark">#cbba83</color>
+    <color name="asg2PrimaryLight">#ffffe5</color>
 </resources>

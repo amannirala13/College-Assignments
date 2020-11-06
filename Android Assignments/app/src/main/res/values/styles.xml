@@ -7,4 +7,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Asg2Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/asg2Primary</item>
+        <item name="colorPrimaryDark">@color/asg2PrimaryDark</item>
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
 </resources>

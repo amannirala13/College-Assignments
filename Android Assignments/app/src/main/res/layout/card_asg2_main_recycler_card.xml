@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_restaurant"
+            app:layout_constraintBottom_toTopOf="@+id/card_asg2_special_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/card_asg2_main_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Tile Here"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/card_asg2_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="4.5/5.0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/asg2PrimaryDark"
+            app:layout_constraintBottom_toBottomOf="@+id/card_asg2_address_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/card_asg2_main_title_text" />
+
+        <TextView
+            android:id="@+id/card_asg2_address_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Address\nWill be \nHere"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toStartOf="@+id/card_asg2_rate_text"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/card_asg2_main_title_text" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_asg2_special_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/asg2PrimaryLight"
+            app:layout_constraintTop_toBottomOf="@id/card_asg2_address_text">
+
+            <TextView
+                android:id="@+id/card_asg2_special_text_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="24dp"
+                android:text="Special:"
+                android:textColor="@color/asg2PrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/card_asg2_special_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="Chocolate Waffles"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/card_asg2_special_text_tag"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
