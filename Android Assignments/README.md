@@ -13,7 +13,9 @@ src
 │           └───mobilesiu
 │               ├───assignments			==> Contains the files and pkg of assignments  
 │               │   └───asg1			==> Package of 1st assignment
-│               │
+│               │   │
+│               │   └───asg2			==> Package of 2nd assignment on Live Data
+│               │   
 │               └───main  -> (Contains the files for listing the assignments)
 │                   ├───activities
 │                   ├───adapter
