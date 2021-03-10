@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assignments.asg2.activities.Asg2MainActivity"
-    app:layoutDescription="@xml/activity_asg2_main_scene">
+    tools:context=".assignments.asg2.activities.Asg2MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"

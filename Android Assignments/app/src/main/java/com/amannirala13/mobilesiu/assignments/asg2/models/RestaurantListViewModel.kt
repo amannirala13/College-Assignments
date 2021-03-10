@@ -20,5 +20,4 @@ class RestaurantListViewModel: ViewModel(){
         temp.removeAt(index)
         _restaurantList.value = temp
     }
-
 }
