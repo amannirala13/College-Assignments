@@ -21,6 +21,8 @@ This repository contains my academic assignments (projects and scripts) from my 
 - Shell
 - Matlab
 - Kotlin
+- JavaScript
+- Typescript
 
 ------
 
