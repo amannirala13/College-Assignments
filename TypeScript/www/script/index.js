@@ -1,10 +1,10 @@
 //---- Comment this section in the generate JS code----
-/*import * as THREE from "./three.js";
-import { SockJS } from "./sockjs.min.js";*/
+import * as THREE from "./three.js";
+import { SockJS } from "./sockjs.min.js";
 //-----------------------------------------------------
 let gyroData = [];
-const videoPlayer = document.getElementById('video_player');
-const videoPlayerContainer = document.getElementById('video_player_container');
+const videoPlayer = document.getElementById('video_player')[0];
+const videoPlayerContainer = document.getElementById('video_player_container')[0];
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1100);
 const scene = new THREE.Scene();
 const geometry = new THREE.SphereGeometry(500, 60, 40);
