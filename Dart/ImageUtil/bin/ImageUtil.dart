@@ -2,19 +2,23 @@ import 'package:image/image.dart';
 import 'dart:core';
 import 'dart:io' as io;
 
-
+// Variable definition for image object and path
 Image image;
 String path;
 
+// The main function
 void main(List<String> arguments) {
 
+  print('----------------- IMAGE CONVERTOR -----------------');
+
   print('Enter JPG image path: ');
-  path = io.stdin.readLineSync();
+  path = io.stdin.readLineSync();   // Accept image path
 
   choosePresentFormat();
 
 }
 
+// Choosing present file format to get the raw byte data
 void choosePresentFormat() {
   print('Select the format of your image:\n'
       '1 - JPG\n'
@@ -22,6 +26,8 @@ void choosePresentFormat() {
       '3 - WEBP\n'
       '4 - ICO\n'
       '5 - PSD\n');
+
+  // Input of choice
   var choice = int.parse(io.stdin.readLineSync());
   switch(choice){
     case 1: loadJPGImage(path);break;
@@ -37,6 +43,7 @@ void choosePresentFormat() {
   chooseAction();
 }
 
+// Choosing the format to export the image
 void chooseAction() {
   print('Select the output format of your image:\n'
       '1 - JPG\n'
@@ -55,6 +62,7 @@ void chooseAction() {
   }
 }
 
+// Loading a JPG image
 void loadJPGImage(String uri){
   try{
     image = decodeJpg(io.File(uri).readAsBytesSync());
@@ -63,6 +71,7 @@ void loadJPGImage(String uri){
   }
 }
 
+// Loading a PNG image
 void loadPNGImage(String uri){
   try{
     image = decodePng(io.File(uri).readAsBytesSync());
@@ -71,6 +80,7 @@ void loadPNGImage(String uri){
   }
 }
 
+// Loading an ICO image
 void loadIcoImage(String uri){
   try{
     image = decodeIco(io.File(uri).readAsBytesSync());
@@ -79,6 +89,7 @@ void loadIcoImage(String uri){
   }
 }
 
+// Loading a WEBP image
 void loadWebPImage(String uri){
   try{
     image = decodeWebP(io.File(uri).readAsBytesSync());
@@ -87,6 +98,7 @@ void loadWebPImage(String uri){
   }
 }
 
+// Loading a PSD file
 void loadPsdImage(String uri){
   try{
     image = decodePsd(io.File(uri).readAsBytesSync());
@@ -97,6 +109,7 @@ void loadPsdImage(String uri){
 
 
 
+// Exporting to JPG image file
 void exportToJPG(){
   try {
     var output = encodeJpg(image);
@@ -108,6 +121,7 @@ void exportToJPG(){
   }
 }
 
+// Exporting to PNG image file
 void exportToPNG(){
   try{
   var output = encodePng(image);
@@ -118,6 +132,7 @@ void exportToPNG(){
 
 }
 
+// Exporting to ICO image file
 void exportToICO(){
   try{
   var output = encodeIco(image);
@@ -127,6 +142,7 @@ void exportToICO(){
   }
 }
 
+// Exporting to Byte file
 void exportToByte(){
   try{
     io.File('${DateTime.now().millisecond}.bytes').writeAsBytes(image.data);}
