@@ -29,4 +29,7 @@ This repository contains my academic assignments (projects and scripts) from my 
 ### Important Resource Links
 
 [C++ Library Reference](http://www.cplusplus.com/reference/)
+[NASM Assmebler Guide](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
+[Assembly Language Guide](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
+
 
