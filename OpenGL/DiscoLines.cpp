@@ -28,9 +28,9 @@ void display(){
     glutSwapBuffers();      //Swaps background frame to foreground once its ready
 }
 
-//Animation callback: Calls itself after a particular period of time to tell OpenGl to redraw the frame
+//Animation callback: Calls itself after a particular period of time to tell OpenGl to re-draw the frame
 void update(int){
-    glutPostRedisplay();        //Calls glutDisplayFunction i.e. display() to redraw the frame
+    glutPostRedisplay();        //Calls glutDisplayFunction i.e. display() to re-draw the frame
     glutTimerFunc(16,update,0);     //Calls the update() function after 16ms for creating 60fps animation
 }
 
@@ -38,7 +38,7 @@ void update(int){
 int main(int argc, char** args){
     glutInit(&argc, args);      //Init glut
     glutCreateWindow("OpenGL Renderer");    //Creating rendering window with Title
-    glutInitDisplayMode(GL_DOUBLE | GLUT_RGBA);     //Defining display mode GL_DOUBLE for double duffer 
+    glutInitDisplayMode(GL_DOUBLE | GLUT_RGBA);     //Defining display mode GL_DOUBLE for double buffer 
                                                     //and GLUT/RGBA for rgba color encoding
     glutInitWindowSize(500,500);    //Defining the renderer window size
     glutInitWindowPosition(100,100);    //Defining the position of the renderer window on the display
