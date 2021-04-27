@@ -20,7 +20,7 @@ void display(){
 
     for(int n = 0;n<rand()%50;n++){     //Loop for creating random number of lines
         glColor3ub(rand()%255,rand()%255,rand()%255);   //Setting random rgb color profile to the graphics
-        glVertex2i(rand()%500,g rand()%500);    //Drawing fist vertex of the line with random values of x and y
+        glVertex2i(rand()%500, rand()%500);    //Drawing fist vertex of the line with random values of x and y
         glVertex2i(rand()%500, rand()%500);     //Drawing second vertex of the line with random values of x and y
     }
 
