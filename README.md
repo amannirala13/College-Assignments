@@ -23,6 +23,7 @@ This repository contains my academic assignments (projects and scripts) from my 
 - Kotlin
 - JavaScript
 - Typescript
+- Dart
 
 ------
 
