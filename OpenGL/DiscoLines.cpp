@@ -7,7 +7,8 @@
 //glutDisplayFunc: Draws frames
 void display(){
     glClearColor(0.0f,0.0f,0.0f,1.0f);  //Defining RGBA color buffers used by glColor while clearing color buffers
-    glMatrixMode( GL_PROJECTION );      //Defining Projection matrix as the curring matrix               
+    glMatrixMode( GL_PROJECTION );      //Defining Projection matrix as the curring matrix  
+    glLoadIdentity();             // Replacing the current matrix with identity matrix
     gluOrtho2D( 0, 500, 0, 500);        //Setting Orthogonal 2D projection matrix
 
     glClear(GL_COLOR_BUFFER_BIT);   //Clearing the color buffer
