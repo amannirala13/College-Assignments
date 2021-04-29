@@ -15,5 +15,5 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034 / 2;
   Serial.println(distance);
-  delayMicroseconds(100);
+  delayMicroseconds(1000);
 }
