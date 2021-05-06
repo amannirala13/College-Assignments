@@ -1,5 +1,5 @@
 # How to run `life.cpp`
-TO compile, use the `compile.sh` script. Once done you can run the file using the command with options as follows:<br>
+To compile, use the `compile.sh` script. Once done you can run the file using the command with options as follows:<br>
 
 **`$ .\life <width> <height> <dot-size>`**
 
