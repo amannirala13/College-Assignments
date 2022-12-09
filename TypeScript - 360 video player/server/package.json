@@ -16,7 +16,7 @@
     "@types/socket.io-client": "^1.4.35",
     "@types/sockjs": "^0.3.32",
     "custom-event": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "http": "0.0.1-security",
     "nodemon": "^2.0.7",
     "serialport": "^9.0.7",
